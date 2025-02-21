@@ -2,7 +2,6 @@ package tests;
 
 import base.BaseTest;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CustomerPage;
 
@@ -51,10 +50,8 @@ public class CustomerTest extends BaseTest {
         Thread.sleep(3000);
         customerPage.deposit(String.valueOf(1000));
         Thread.sleep(3000);
-        //  customerPage.selectCustomer("Hermoine Granger");
         Thread.sleep(3000);
         customerPage.deposit("1000");
-        // Assert.assertEquals(customerPage.getBalance(), "1000");
     }
 
     @Test(priority = 4)
@@ -63,12 +60,10 @@ public class CustomerTest extends BaseTest {
         customerPage.clickCustomerLogin();
         customerPage.selectCustomer("Hermoine Granger");
         Thread.sleep(3000);
-        customerPage.withdraw(String.valueOf(50)); // Replace with the amount you want to withdraw();
+        customerPage.withdraw(String.valueOf(50));
         Thread.sleep(3000);
-        // customerPage.selectCustomer("Hermoine Granger");
         Thread.sleep(3000);
         customerPage.withdraw("50");
-        //Assert.assertEquals(customerPage.getBalance(), "50");
 
     }
 }

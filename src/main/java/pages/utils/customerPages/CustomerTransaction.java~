@@ -1,0 +1,4 @@
+package pages.utils.customerPages;
+
+public class CustomerTransaction {
+}

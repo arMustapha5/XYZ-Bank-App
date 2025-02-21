@@ -13,7 +13,7 @@ public class CustomerPage extends BasePage {
     @FindBy(xpath = "//button[contains(text(),'Deposit')]")
     private WebElement depositButton;
 
-    @FindBy(xpath = "//button[contains(text(),'Customer Login')]")
+    @FindBy(xpath = "//button[contains(text(),'CustomerLogin Login')]")
     private WebElement customerLoginButton;
 
     @FindBy(xpath = "//button[contains(text(),'Withdrawl')]")
@@ -43,7 +43,7 @@ public class CustomerPage extends BasePage {
         // waitForElementToBeVisible(customerSelect);
         customerSelect.sendKeys(customerName);
         customerSelect.submit();
-        // Add customer selection logic
+        // Add Customer selection logic
     }
     public void transactions() {
         waitForElementToBeClickable(transactionButton);
