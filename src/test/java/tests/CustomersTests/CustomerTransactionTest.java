@@ -2,7 +2,6 @@ package tests.CustomersTests;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
-import pages.CustomerPage;
 import pages.utils.customerPages.CustomerLogin;
 import pages.utils.customerPages.CustomerTransaction;
 
