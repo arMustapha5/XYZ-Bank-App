@@ -11,7 +11,7 @@ import pages.utils.bankManagerPages.ViewCustomers;
 public class DeleteAccountTest extends BaseTest {
 
 
-    @Test(priority = 6)
+    @Test(priority = 5)
     public void testDeleteCustomer() throws InterruptedException {
 
         BankManagerLoginPage managerPage = new BankManagerLoginPage(driver);

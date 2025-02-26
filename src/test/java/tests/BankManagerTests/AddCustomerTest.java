@@ -16,9 +16,9 @@ public class AddCustomerTest extends BaseTest {
         Thread.sleep(3000);
         addCustomer.clickAddCustomer();
         Thread.sleep(3000);
-        addCustomer.addNewCustomer("John", "Doe", "12345");
+        addCustomer.addNewCustomer("Abdul", "Mustapha", "12345");
         Thread.sleep(3000);
-        // Add assertions here
+
 
     }
 

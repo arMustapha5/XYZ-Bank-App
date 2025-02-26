@@ -20,8 +20,8 @@ public class BaseTest {
         driver = new ChromeDriver(options);
 
         // Set implicit wait for the entire session
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"); // Replace with actual URL
     }
 

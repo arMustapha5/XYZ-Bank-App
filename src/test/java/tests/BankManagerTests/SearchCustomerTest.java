@@ -9,7 +9,7 @@ import pages.utils.bankManagerPages.ViewCustomers;
 @Test
 public class SearchCustomerTest extends BaseTest {
 
-    @Test(priority = 5)
+    @Test(priority = 4)
     public void testSearchCustomers() throws InterruptedException {
         BankManagerLoginPage managerPage = new BankManagerLoginPage(driver);
         ViewCustomers viewCustomers = new ViewCustomers(driver);
