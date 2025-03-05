@@ -8,7 +8,7 @@ import pages.utils.bankManagerPages.BankManagerLoginPage;
 import org.junit.*;
 
 public class AddCustomerTest extends BaseTest {
-    @Order(1)
+    @Order(2)
     @Test
     public void testAddCustomer() {
         // Initialize page objects
