@@ -1,15 +1,12 @@
 package tests.BankManagerTests;
 
 import base.BaseTest;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import pages.utils.bankManagerPages.AddCustomer;
 import pages.utils.bankManagerPages.BankManagerLoginPage;
-import org.junit.*;
 
 public class AddCustomerTest extends BaseTest {
-    @Order(1)
-    @Test
+    @Test(priority = 2)
     public void testAddCustomer() {
         // Initialize page objects
         BankManagerLoginPage managerPage = new BankManagerLoginPage(driver);

@@ -10,7 +10,6 @@ public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
     private static final int TIMEOUT = 10;
-    private static final int POLLING = 100;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -24,14 +23,6 @@ public class BasePage {
 
     protected void waitForElementToBeVisible(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
-    }
-
-    protected void waitForElementToBeInvisible(WebElement element) {
-        wait.until(ExpectedConditions.invisibilityOf(element));
-    }
-
-    protected void waitForTextToBePresentInElement(WebElement element, String text) {
-        wait.until(ExpectedConditions.textToBePresentInElement(element, text));
     }
 
     protected void safeClick(WebElement element) {
